@@ -166,6 +166,6 @@ def register_commands(app):
 
     @app.cli.command()
     def test():
-        """Run unit tests"""
+        Run unit tests
         test_suite = unittest.TestLoader().discover('tests')
         unittest.TextTestRunner(verbosity=2).run(test_suite)
